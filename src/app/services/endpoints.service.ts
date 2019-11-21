@@ -10,5 +10,9 @@ export class EndpointsService {
 
   public readonly GET_HELLO_WORLD_BY_ID: string = this.baseURL + "hello-world-service/hello-world/${id}";
 
+  public readonly LOGIN: string = this.baseURL + "slate-account-service/login";
+
+  public readonly REGISTER: string = this.baseURL + "slate-account-service/register";
+
   constructor() {}
 }
