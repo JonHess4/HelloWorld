@@ -4,25 +4,19 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloWorldComponent } from './components/hello-world/hello-world.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HelloWorldComponent,
-    NavBarComponent,
-    LoginComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    NoopAnimationsModule
+		HttpClientModule,
+		ReactiveFormsModule,
+		BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
